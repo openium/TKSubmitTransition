@@ -14,11 +14,17 @@
 		B0FAC8651B7356F40034E00B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0FAC8641B7356F40034E00B /* Images.xcassets */; };
 		B0FAC8681B7356F40034E00B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0FAC8661B7356F40034E00B /* LaunchScreen.xib */; };
 		B0FAC8741B7356F40034E00B /* SubmitTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAC8731B7356F40034E00B /* SubmitTransitionTests.swift */; };
-		B0FAC87F1B7359000034E00B /* TransitionSubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAC87E1B7359000034E00B /* TransitionSubmitButton.swift */; };
-		B0FAC8851B736C460034E00B /* TimerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAC8841B736C460034E00B /* TimerEx.swift */; };
-		B0FAC8871B7440190034E00B /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAC8861B7440190034E00B /* CGRectEx.swift */; };
-		B0FAC8891B744FB10034E00B /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAC8881B744FB10034E00B /* SpinerLayer.swift */; };
-		B0FAC88B1B747F990034E00B /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAC88A1B747F990034E00B /* FadeTransition.swift */; };
+		BAEA663F221589F900E847EC /* TKSubmitTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEA6636221589F800E847EC /* TKSubmitTransition.framework */; };
+		BAEA6646221589F900E847EC /* TKSubmitTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA6645221589F900E847EC /* TKSubmitTransitionTests.swift */; };
+		BAEA6648221589F900E847EC /* TKSubmitTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEA6638221589F800E847EC /* TKSubmitTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAEA664B221589F900E847EC /* TKSubmitTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEA6636221589F800E847EC /* TKSubmitTransition.framework */; };
+		BAEA664C221589F900E847EC /* TKSubmitTransition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAEA6636221589F800E847EC /* TKSubmitTransition.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BAEA665922158A0F00E847EC /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAC88A1B747F990034E00B /* FadeTransition.swift */; };
+		BAEA665A22158A0F00E847EC /* TransitionSubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAC87E1B7359000034E00B /* TransitionSubmitButton.swift */; };
+		BAEA665B22158A0F00E847EC /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAC8861B7440190034E00B /* CGRectEx.swift */; };
+		BAEA665C22158A0F00E847EC /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAC8881B744FB10034E00B /* SpinerLayer.swift */; };
+		BAEA665D22158A0F00E847EC /* TimerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAC8841B736C460034E00B /* TimerEx.swift */; };
+		BAEA665F2215BEF900E847EC /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA665E2215BEF900E847EC /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +35,42 @@
 			remoteGlobalIDString = B0FAC8571B7356F30034E00B;
 			remoteInfo = SubmitTransition;
 		};
+		BAEA6640221589F900E847EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FAC8501B7356F30034E00B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAEA6635221589F800E847EC;
+			remoteInfo = TKSubmitTransition;
+		};
+		BAEA6642221589F900E847EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FAC8501B7356F30034E00B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0FAC8571B7356F30034E00B;
+			remoteInfo = SubmitTransition;
+		};
+		BAEA6649221589F900E847EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FAC8501B7356F30034E00B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAEA6635221589F800E847EC;
+			remoteInfo = TKSubmitTransition;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAEA6652221589F900E847EC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BAEA664C221589F900E847EC /* TKSubmitTransition.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B00C1CC11B7495FC00412E02 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +89,13 @@
 		B0FAC8861B7440190034E00B /* CGRectEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
 		B0FAC8881B744FB10034E00B /* SpinerLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinerLayer.swift; sourceTree = "<group>"; };
 		B0FAC88A1B747F990034E00B /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		BAEA6636221589F800E847EC /* TKSubmitTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TKSubmitTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAEA6638221589F800E847EC /* TKSubmitTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKSubmitTransition.h; sourceTree = "<group>"; };
+		BAEA6639221589F800E847EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAEA663E221589F800E847EC /* TKSubmitTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TKSubmitTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAEA6645221589F900E847EC /* TKSubmitTransitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKSubmitTransitionTests.swift; sourceTree = "<group>"; };
+		BAEA6647221589F900E847EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAEA665E2215BEF900E847EC /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAEA664B221589F900E847EC /* TKSubmitTransition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +111,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAEA6633221589F800E847EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAEA663B221589F800E847EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAEA663F221589F900E847EC /* TKSubmitTransition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +137,8 @@
 			children = (
 				B0FAC85A1B7356F30034E00B /* SubmitTransition */,
 				B0FAC8701B7356F40034E00B /* SubmitTransitionTests */,
+				BAEA6637221589F800E847EC /* TKSubmitTransition */,
+				BAEA6644221589F900E847EC /* TKSubmitTransitionTests */,
 				B0FAC8591B7356F30034E00B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +148,8 @@
 			children = (
 				B0FAC8581B7356F30034E00B /* SubmitTransition.app */,
 				B0FAC86D1B7356F40034E00B /* SubmitTransitionTests.xctest */,
+				BAEA6636221589F800E847EC /* TKSubmitTransition.framework */,
+				BAEA663E221589F800E847EC /* TKSubmitTransitionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,7 +157,6 @@
 		B0FAC85A1B7356F30034E00B /* SubmitTransition */ = {
 			isa = PBXGroup;
 			children = (
-				B0FAC87D1B7358C90034E00B /* Classes */,
 				B0FAC85D1B7356F40034E00B /* AppDelegate.swift */,
 				B0FAC85F1B7356F40034E00B /* ViewController.swift */,
 				B00C1CC11B7495FC00412E02 /* SecondViewController.swift */,
@@ -126,7 +193,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B0FAC87D1B7358C90034E00B /* Classes */ = {
+		BAEA6637221589F800E847EC /* TKSubmitTransition */ = {
 			isa = PBXGroup;
 			children = (
 				B0FAC87E1B7359000034E00B /* TransitionSubmitButton.swift */,
@@ -134,11 +201,34 @@
 				B0FAC88A1B747F990034E00B /* FadeTransition.swift */,
 				B0FAC8861B7440190034E00B /* CGRectEx.swift */,
 				B0FAC8841B736C460034E00B /* TimerEx.swift */,
+				BAEA6638221589F800E847EC /* TKSubmitTransition.h */,
+				BAEA6639221589F800E847EC /* Info.plist */,
+				BAEA665E2215BEF900E847EC /* UIImageExtension.swift */,
 			);
-			path = Classes;
+			path = TKSubmitTransition;
+			sourceTree = "<group>";
+		};
+		BAEA6644221589F900E847EC /* TKSubmitTransitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAEA6645221589F900E847EC /* TKSubmitTransitionTests.swift */,
+				BAEA6647221589F900E847EC /* Info.plist */,
+			);
+			path = TKSubmitTransitionTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BAEA6631221589F800E847EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAEA6648221589F900E847EC /* TKSubmitTransition.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		B0FAC8571B7356F30034E00B /* SubmitTransition */ = {
@@ -148,10 +238,12 @@
 				B0FAC8541B7356F30034E00B /* Sources */,
 				B0FAC8551B7356F30034E00B /* Frameworks */,
 				B0FAC8561B7356F30034E00B /* Resources */,
+				BAEA6652221589F900E847EC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BAEA664A221589F900E847EC /* PBXTargetDependency */,
 			);
 			name = SubmitTransition;
 			productName = SubmitTransition;
@@ -176,6 +268,43 @@
 			productReference = B0FAC86D1B7356F40034E00B /* SubmitTransitionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BAEA6635221589F800E847EC /* TKSubmitTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAEA6651221589F900E847EC /* Build configuration list for PBXNativeTarget "TKSubmitTransition" */;
+			buildPhases = (
+				BAEA6631221589F800E847EC /* Headers */,
+				BAEA6632221589F800E847EC /* Sources */,
+				BAEA6633221589F800E847EC /* Frameworks */,
+				BAEA6634221589F800E847EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TKSubmitTransition;
+			productName = TKSubmitTransition;
+			productReference = BAEA6636221589F800E847EC /* TKSubmitTransition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BAEA663D221589F800E847EC /* TKSubmitTransitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAEA6653221589F900E847EC /* Build configuration list for PBXNativeTarget "TKSubmitTransitionTests" */;
+			buildPhases = (
+				BAEA663A221589F800E847EC /* Sources */,
+				BAEA663B221589F800E847EC /* Frameworks */,
+				BAEA663C221589F800E847EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAEA6641221589F900E847EC /* PBXTargetDependency */,
+				BAEA6643221589F900E847EC /* PBXTargetDependency */,
+			);
+			name = TKSubmitTransitionTests;
+			productName = TKSubmitTransitionTests;
+			productReference = BAEA663E221589F800E847EC /* TKSubmitTransitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,7 +312,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Uniface;
 				TargetAttributes = {
@@ -194,6 +323,16 @@
 					B0FAC86C1B7356F40034E00B = {
 						CreatedOnToolsVersion = 6.4;
 						LastSwiftMigration = 0820;
+						TestTargetID = B0FAC8571B7356F30034E00B;
+					};
+					BAEA6635221589F800E847EC = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
+					BAEA663D221589F800E847EC = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = QH6KR5PAQ7;
+						ProvisioningStyle = Automatic;
 						TestTargetID = B0FAC8571B7356F30034E00B;
 					};
 				};
@@ -213,6 +352,8 @@
 			targets = (
 				B0FAC8571B7356F30034E00B /* SubmitTransition */,
 				B0FAC86C1B7356F40034E00B /* SubmitTransitionTests */,
+				BAEA6635221589F800E847EC /* TKSubmitTransition */,
+				BAEA663D221589F800E847EC /* TKSubmitTransitionTests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,6 +376,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAEA6634221589F800E847EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAEA663C221589F800E847EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -243,13 +398,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B00C1CC21B7495FC00412E02 /* SecondViewController.swift in Sources */,
-				B0FAC8891B744FB10034E00B /* SpinerLayer.swift in Sources */,
-				B0FAC88B1B747F990034E00B /* FadeTransition.swift in Sources */,
 				B0FAC8601B7356F40034E00B /* ViewController.swift in Sources */,
-				B0FAC8871B7440190034E00B /* CGRectEx.swift in Sources */,
 				B0FAC85E1B7356F40034E00B /* AppDelegate.swift in Sources */,
-				B0FAC8851B736C460034E00B /* TimerEx.swift in Sources */,
-				B0FAC87F1B7359000034E00B /* TransitionSubmitButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +411,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAEA6632221589F800E847EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAEA665A22158A0F00E847EC /* TransitionSubmitButton.swift in Sources */,
+				BAEA665B22158A0F00E847EC /* CGRectEx.swift in Sources */,
+				BAEA665C22158A0F00E847EC /* SpinerLayer.swift in Sources */,
+				BAEA665922158A0F00E847EC /* FadeTransition.swift in Sources */,
+				BAEA665D22158A0F00E847EC /* TimerEx.swift in Sources */,
+				BAEA665F2215BEF900E847EC /* UIImageExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAEA663A221589F800E847EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAEA6646221589F900E847EC /* TKSubmitTransitionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -268,6 +439,21 @@
 			isa = PBXTargetDependency;
 			target = B0FAC8571B7356F30034E00B /* SubmitTransition */;
 			targetProxy = B0FAC86E1B7356F40034E00B /* PBXContainerItemProxy */;
+		};
+		BAEA6641221589F900E847EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAEA6635221589F800E847EC /* TKSubmitTransition */;
+			targetProxy = BAEA6640221589F900E847EC /* PBXContainerItemProxy */;
+		};
+		BAEA6643221589F900E847EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0FAC8571B7356F30034E00B /* SubmitTransition */;
+			targetProxy = BAEA6642221589F900E847EC /* PBXContainerItemProxy */;
+		};
+		BAEA664A221589F900E847EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAEA6635221589F800E847EC /* TKSubmitTransition */;
+			targetProxy = BAEA6649221589F900E847EC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -328,7 +514,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -367,7 +553,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -378,10 +564,11 @@
 		B0FAC8781B7356F40034E00B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SubmitTransition/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twitter.tk-365.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -392,10 +579,11 @@
 		B0FAC8791B7356F40034E00B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SubmitTransition/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twitter.tk-365.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +629,166 @@
 			};
 			name = Release;
 		};
+		BAEA664D221589F900E847EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TKSubmitTransition/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.openium.TKSubmitTransition;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BAEA664E221589F900E847EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TKSubmitTransition/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.openium.TKSubmitTransition;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BAEA664F221589F900E847EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = QH6KR5PAQ7;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TKSubmitTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.openium.TKSubmitTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubmitTransition.app/SubmitTransition";
+			};
+			name = Debug;
+		};
+		BAEA6650221589F900E847EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH6KR5PAQ7;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TKSubmitTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.openium.TKSubmitTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubmitTransition.app/SubmitTransition";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -467,6 +815,24 @@
 			buildConfigurations = (
 				B0FAC87B1B7356F40034E00B /* Debug */,
 				B0FAC87C1B7356F40034E00B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAEA6651221589F900E847EC /* Build configuration list for PBXNativeTarget "TKSubmitTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAEA664D221589F900E847EC /* Debug */,
+				BAEA664E221589F900E847EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAEA6653221589F900E847EC /* Build configuration list for PBXNativeTarget "TKSubmitTransitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAEA664F221589F900E847EC /* Debug */,
+				BAEA6650221589F900E847EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

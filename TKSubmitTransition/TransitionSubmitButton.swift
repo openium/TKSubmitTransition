@@ -28,6 +28,37 @@ open class TKTransitionSubmitButton : UIButton, UIViewControllerTransitioningDel
         }
     }
     
+    //Normal state bg and border
+    @IBInspectable open var normalBorderColor: UIColor? {
+        didSet {
+            layer.borderColor = normalBorderColor?.cgColor
+        }
+    }
+    
+    @IBInspectable open var normalBackgroundColor: UIColor? {
+        didSet {
+            setBgColorForState(color: normalBackgroundColor, forState: .normal)
+        }
+    }
+    
+    //Highlighted state bg and border
+    @IBInspectable open var highlightedBorderColor: UIColor?
+    
+    @IBInspectable open var highlightedBackgroundColor: UIColor? {
+        didSet {
+            setBgColorForState(color: highlightedBackgroundColor, forState: .highlighted)
+        }
+    }
+    
+    private func setBgColorForState(color: UIColor?, forState: UIControl.State){
+        if color != nil {
+            setBackgroundImage(UIImage.imageWithColor(color: color!), for: forState)
+            
+        } else {
+            setBackgroundImage(nil, for: forState)
+        }
+    }
+    
     var cachedTitle: String?
     
     public override init(frame: CGRect) {
